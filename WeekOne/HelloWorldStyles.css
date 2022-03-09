@@ -9,10 +9,10 @@
 
 @keyframes scroll {
     from {
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(100%);
     }
 }  
 
@@ -26,7 +26,7 @@
     color: midnightblue;
     background-color:gold;
     text-align: center;
-    animation: scroll 8s reverse linear infinite;
+    animation: scroll 8s linear infinite;
 }
 
 .header2 {
