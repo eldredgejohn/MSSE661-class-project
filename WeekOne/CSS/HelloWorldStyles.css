@@ -14,7 +14,11 @@
     to {
       transform: translateX(100%);
     }
-}  
+}
+
+.body{
+    overflow-x: hidden;
+}
 
 .header1 {
     margin: 0;
