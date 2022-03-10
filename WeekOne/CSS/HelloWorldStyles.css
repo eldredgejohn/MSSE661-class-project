@@ -1,0 +1,56 @@
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+@keyframes scroll {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+}  
+
+.header1 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-left: 20px solid;
+    border-right: 20px solid;
+    color: midnightblue;
+    background-color:gold;
+    text-align: center;
+    animation: scroll 8s linear infinite;
+}
+
+.header2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:midnightblue;
+    border-bottom: 5px solid;
+    border-color: gold;
+    text-align: center;
+}
+
+.div1 {
+    margin: auto;
+    width: 50%;
+}
+
+.image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: fade_in 5s linear 1;
+    transition: transform 2s;
+}
+
+.image1:hover {
+    transform: rotateZ(360deg);
+}
