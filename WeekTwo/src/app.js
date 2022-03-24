@@ -12,18 +12,32 @@ class Soap{
     }
 }
 
-newSoap = new Map([
+//The soap to create
+newSoap = new Map();
+
+//All soaps conatin these base ingredients
+baseSoap = new Map([
     ["lye", 8.97],
     ["water", 12.80],
-    ["castor", 9.60],
-    ["aloe butter", 9.60],
-    ["babassu", 9.60],
-    ["kokum butter", 6.40],
-    ["mango butter", 6.40],
-    ["neem seed oil", 3.20],
-    ["palm oil", 6.40],
-    ["safflower oil", 6.40],
-    ["shea butter", 6.40],
+    ["castor", 9.60]
 ])
 
+/*Add the base ingredients to each soap
+baseSoap.array.forEach(function(value, key) {
+    newSoap.set(key, value);
+});*/
+
+//Add the user defined ingredients to cureent soap
+newSoap.set(baseSoap);
+newSoap.set("aloe butter", 9.60);
+newSoap.set("babassu", 9.60);
+newSoap.set("kokum butter", 6.40);
+newSoap.set("mango butter", 6.40);
+newSoap.set("neem seed oil", 3.20);
+newSoap.set("palm oil", 6.40);
+newSoap.set("safflower oil", 6.40);
+newSoap.set("shea butter", 6.40);
+
+//Ensure the code will work and view in console... Report
 console.log(new Soap("Trenzik", false, true, newSoap));
+console.log("Created soap has " + newSoap.size + " ingredients!");
