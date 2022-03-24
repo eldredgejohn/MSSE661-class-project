@@ -27,8 +27,13 @@ baseSoap.array.forEach(function(value, key) {
     newSoap.set(key, value);
 });*/
 
+//This at least works
+for (var x of baseSoap.entries()){
+    newSoap.set(x[0], x[1]);
+}
+
 //Add the user defined ingredients to cureent soap
-newSoap.set(baseSoap);
+//newSoap.set(baseSoap);
 newSoap.set("aloe butter", 9.60);
 newSoap.set("babassu", 9.60);
 newSoap.set("kokum butter", 6.40);
