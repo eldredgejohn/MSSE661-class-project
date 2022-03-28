@@ -1,0 +1,16 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "This weeks update include creating a web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mysql": "^2.18.1"
+  }
+}
