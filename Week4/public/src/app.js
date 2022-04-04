@@ -22,14 +22,10 @@ const doLogin = function(e) {
       email: email,
       password: password
     }).then(function(res) {
-      window.location.href = 'home.html';
+      window.location.href = 'index.html';
     });
   };
   
-  const doLogout = function(e) {
-    e.preventDefault();
-  };
-
 class Soap{
     name;
     premade = false;

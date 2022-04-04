@@ -63,7 +63,7 @@ footer {
     color: midnightblue;
     background-color:gold;
     text-align: center;
-    animation: scroll 8s linear infinite;
+    /*animation: scroll 8s linear infinite;*/
 }
 
 .greeting {
